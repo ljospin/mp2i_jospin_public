@@ -1,4 +1,5 @@
-FROM ocaml/opam:ubuntu-20.10-ocaml-4.08
+FROM ocaml/opam:debian-10-ocaml-4.12
+# FROM ocaml/opam:ubuntu-20.10-ocaml-4.08
 
 RUN sudo -E apt-get -y install pkg-config m4 zlib1g-dev python3-pip libcairo2-dev libgmp-dev libzmq3-dev
 RUN sudo -E pip3 install --upgrade pip
